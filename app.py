@@ -11,7 +11,7 @@ uploaded_file = st.sidebar.file_uploader("Faça upload do arquivo .xlsx", type=[
 if uploaded_file:
     try:
         df = pd.read_excel(uploaded_file)
-        st.success(f"Arquivo carregado com sucesso! {df.shape[0]} linhas, {df.shape[1]} colunas.")
+        # st.success(f"Arquivo carregado com sucesso! {df.shape[0]} linhas, {df.shape[1]} colunas.")  # Removido conforme solicitado
 
         # Filtros na barra lateral
         st.sidebar.header("Filtros")
@@ -26,7 +26,7 @@ if uploaded_file:
         localidade_sel = st.sidebar.selectbox("Selecione a localidade", options=localidades)
 
         # Filtro de busca
-        search = st.text_input("Pesquisar termo (em qualquer coluna):")
+        search = st.text_input("♾️ Filtro de busca:")
         df_filtrado = df.copy()
         # Aplicar filtros
         if anos and ano_sel != "Todos":
@@ -65,4 +65,4 @@ st.markdown("""
 <div style='background:#23232b; color:#fff; padding:0.7em 0; text-align:center; font-size:1rem; border-radius:4px;'>
 Copyright © 2025 Todos os direitos reservados - Claro Brasil
 </div>
-""", unsafe_allow_html=True) 
+""", unsafe_allow_html=True)  
