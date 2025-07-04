@@ -26,7 +26,7 @@ if uploaded_file:
         localidade_sel = st.sidebar.selectbox("Selecione a localidade", options=localidades)
 
         # Filtro de busca
-        search = st.text_input("♾️ Filtro de busca:")
+        search = st.text_input("🔍 Filtro de busca:")
         df_filtrado = df.copy()
         # Aplicar filtros
         if anos and ano_sel != "Todos":
