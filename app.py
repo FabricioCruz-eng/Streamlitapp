@@ -3,7 +3,7 @@ import pandas as pd
 
 st.set_page_config(page_title="🍂Gestão de Melhoria de Rede", layout="wide")
 # Título customizado com emoji, cor e fonte menor
-st.markdown('<h2 style="color:#E9775D; font-size:1.6rem; font-weight:600; margin-bottom: 1.2rem;"> ⚡Gestão de Melhoria de Rede</h2>', unsafe_allow_html=True)
+st.markdown('<h2 style="color:#E9775D; font-size:1.6rem; font-weight:600; margin-bottom: 1.2rem;"> "C:\Users\72018799\Pictures\logo noc claro.gif" Gestão de Melhoria de Rede</h2>', unsafe_allow_html=True)
 
 # Upload do arquivo na sidebar
 uploaded_file = st.sidebar.file_uploader("Faça upload do arquivo .xlsx", type=["xlsx"])
